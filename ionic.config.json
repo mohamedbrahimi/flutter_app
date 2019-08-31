@@ -1,5 +1,9 @@
 {
   "name": "nglbc",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "b805f251"
 }
