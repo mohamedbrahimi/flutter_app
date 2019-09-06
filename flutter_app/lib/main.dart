@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import './app_screens/first_screen.dart';
-
+import './app_screens/home.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
+  var listScreen = [
+     MyHomePage(title: 'Flutter Demo Home Page'),
+    Home()
+  ];
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -22,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.amber,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: listScreen[1],
     );
   }
 }
