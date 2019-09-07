@@ -63,8 +63,23 @@ class Home1 extends StatelessWidget {
                   ),
                 )
               ])
+              ,
+              BeautifulBeautyAssets()
             ],
           )),
     );
   }
+}
+
+class BeautifulBeautyAssets extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    AssetImage assetImage = AssetImage('images/beautiful-beauty-face.jpg');
+    Image image = Image(image: assetImage);
+    return Container(
+        child: image,
+        margin: EdgeInsets.only(left: 0, top: 20, right: 20)
+    );
+  }
+
 }
