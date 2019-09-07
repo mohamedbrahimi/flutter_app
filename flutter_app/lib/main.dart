@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './app_screens/first_screen.dart';
 import './app_screens/home.dart';
 import './app_screens/home_1.dart';
+import './app_screens/home_2.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
   var listScreen = [
      MyHomePage(title: 'Flutter Demo Home Page'),
     Home(),
-    Home1()
+    Home1(),
+    Home2()
   ];
   // This widget is the root of your application.
   @override
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.amber,
       ),
-      home: listScreen[2],
+      home: listScreen[3],
     );
   }
 }
